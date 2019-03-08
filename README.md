@@ -1,4 +1,4 @@
-# comus_fun_client
+# Nuxtjs and Storybook client
 
 > Nuxt.js and Storybook starter
 
@@ -10,6 +10,9 @@ $ npm install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
+
+# serve storybook with hot reload
+$ npm run storybook
 
 # build for production and launch server
 $ npm run build
