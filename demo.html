@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="dist/foo.min.js"></script>
+</head>
+
+<body>
+  Hello my test is here!
+  <div id="app">
+    {{message}}
+    <div>
+      <foo-counters v-bind:data="test" id="counters">
+      </foo-counters>
+    </div>
+  </div>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue!',
+        test: Array(1, 2, 3)
+      }
+    })
+
+  </script>
+  <script>
+    var globalEvents = new Vue();
+    window.eventBus = globalEvents;
+    var globalCounters = Array('legacy loaded counter', 'foo', 'bar');
+    console.log(window);
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log(app)
+    });
+
+  </script>
+  <script>
+    console.log(globalEvents);
+    globalEvents.$on('customStuff', function (data) {
+      console.log(data);
+    });
+
+  </script>
+</body>
+
+</html>
