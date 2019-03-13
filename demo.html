@@ -15,33 +15,61 @@
   <div id="app">
     {{message}}
     <div>
-      <foo-counters v-bind:data="test" id="counters">
+      <foo-counters :counters-array="test" id="counters">
       </foo-counters>
     </div>
+    <div id="otherCounters"></div>
   </div>
   <script>
+    // This is only needed if we want top level bind functionality (Method #1)
     var app = new Vue({
       el: '#app',
       data: {
         message: 'Hello Vue!',
-        test: Array(1, 2, 3)
+        test: ''
       }
     })
 
   </script>
   <script>
-    var globalEvents = new Vue();
-    window.eventBus = globalEvents;
-    var globalCounters = Array('legacy loaded counter', 'foo', 'bar');
-    console.log(window);
+    // Global event bus to communicate with legacy codebase
+    var eventBus = new Vue();
+    window.eventBus = eventBus;
+
+    // some random example data to render N counters based on it
+    var globalCounters = Array('legacy loaded counter');
+
     document.addEventListener("DOMContentLoaded", function () {
-      console.log(app)
+      // Example of dynamic append with global document object
+      var counter = document.createElement("foo-counter"); // Create a <foo-counter> element         
+      counter.setAttribute("name", "counter created with vanilla JS");
+      document.getElementById('otherCounters').appendChild(counter);
+
+      // Load props using global vue app as prop
+      // #1
+      app.test = JSON.stringify(['passed as a property', 'with json string']);
+
+      // This is also possible by setting the attribute: #2
+      // Ex:
+      // document.getElementById('counters').setAttribute("counters-array", JSON.stringify(['passed as', 'a property',
+      //   'with json string'
+      // ]));
+      // This approach does not require global Vue app
+
     });
+
+    // I could only get the next approach working using the onload event
+    window.onload = function () {
+      // Send as global event with global event bus and load a data attr of the component
+      // #3
+      eventBus.$emit('loadCounters', globalCounters);
+      // eventBus.$emit('loadCounters', ['more counters', 'more']);
+    };
 
   </script>
   <script>
-    console.log(globalEvents);
-    globalEvents.$on('customStuff', function (data) {
+    // Listening to a vuejs triggered event
+    eventBus.$on('customStuff', function (data) {
       console.log(data);
     });
 

@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     handleEmmit: function(counter) {
-      window.eventBus.$emit("customStuff", {
+      eventBus.$emit("customStuff", {
         message: "I emmit from " + this.name,
         counter
       });
