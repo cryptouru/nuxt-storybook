@@ -21,6 +21,9 @@ Vue.component('RouterLink', {
   },
   template: '<a @click="log()"><slot>RouterLink</slot></a>',
 })
+import 'buefy/dist/buefy.css'
+import Buefy from 'buefy'
+Vue.use(Buefy)
 
 function loadStories() {
   // You can require as many stories as you need.

@@ -8,6 +8,7 @@ import {
 } from '@storybook/vue';
 
 import Logo from '../components/Logo.vue';
+import SignUp from '../components/SignUp.vue';
 
 export const methods = {
   log: action("log"),
@@ -26,5 +27,15 @@ storiesOf('Logo', module)
       Logo
     },
     template: '<logo @vote="log"></logo>',
+    methods
+  }));
+
+storiesOf('SignUp', module)
+  .addDecorator(paddedList)
+  .add('story as a component', () => ({
+    components: {
+      SignUp
+    },
+    template: '<SignUp @vote="log"></SignUp>',
     methods
   }));
