@@ -44,7 +44,7 @@ storiesOf('SignUp', module)
     components: {
       SignUp
     },
-    template: '<SignUp @submit="log" loading="true"></SignUp>',
+    template: '<SignUp @submit="log" :loading="true"></SignUp>',
     methods
   }));;
 
@@ -60,6 +60,6 @@ storiesOf('Card', module)
     components: {
       Card
     },
-    template: '<Card loading="true"/>',
+    template: '<Card :loading="true"/>',
     methods
   }));

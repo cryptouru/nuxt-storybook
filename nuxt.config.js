@@ -1,7 +1,4 @@
 const pkg = require('./package')
-const {
-  VueLoaderPlugin
-} = require('vue-loader')
 
 module.exports = {
   mode: 'universal',
@@ -60,15 +57,6 @@ module.exports = {
    ** Build configuration
    */
   build: {
-    postcss: {
-      plugins: {
-        'postcss-cssnext': {
-          features: {
-            customProperties: false
-          }
-        }
-      }
-    },
     /*
      ** You can extend webpack config here
      */
@@ -82,10 +70,6 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    },
-    plugins: [
-      // make sure to include the plugin for the magic
-      new VueLoaderPlugin()
-    ]
+    }
   }
 }

@@ -1,0 +1,640 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Card Loading 1`] = `
+<div
+  style="padding: 2rem;"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card-image"
+    >
+      <figure
+        class="image"
+      >
+        <img
+          alt="Image"
+          src="https://via.placeholder.com/728x430.png"
+        />
+      </figure>
+    </div>
+     
+    <div
+      class="card-content"
+    >
+      <div
+        class="media"
+      >
+        <div
+          class="media-left"
+        >
+          <figure
+            class="image is-48x48"
+          >
+            <img
+              alt="Image"
+              src="https://via.placeholder.com/90"
+            />
+          </figure>
+        </div>
+         
+        <div
+          class="media-content"
+        >
+          <p
+            class="title is-4"
+          >
+            John Smith
+          </p>
+           
+          <p
+            class="subtitle is-6"
+          >
+            @johnsmith
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="content"
+      >
+        
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Phasellus nec iaculis mauris.
+      
+        <a>
+          @bulmaio
+        </a>
+        .
+      
+        <a>
+          #css
+        </a>
+         
+        <a>
+          #responsive
+        </a>
+         
+        <br />
+         
+        <small>
+          11:09 PM - 1 Jan 2016
+        </small>
+      </div>
+    </div>
+     
+    <div
+      class="loading-overlay is-active is-full-page"
+    >
+      <div
+        class="loading-background"
+      />
+       
+      <div
+        class="loading-icon"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Card Vanilla 1`] = `
+<div
+  style="padding: 2rem;"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card-image"
+    >
+      <figure
+        class="image"
+      >
+        <img
+          alt="Image"
+          src="https://via.placeholder.com/728x430.png"
+        />
+      </figure>
+    </div>
+     
+    <div
+      class="card-content"
+    >
+      <div
+        class="media"
+      >
+        <div
+          class="media-left"
+        >
+          <figure
+            class="image is-48x48"
+          >
+            <img
+              alt="Image"
+              src="https://via.placeholder.com/90"
+            />
+          </figure>
+        </div>
+         
+        <div
+          class="media-content"
+        >
+          <p
+            class="title is-4"
+          >
+            John Smith
+          </p>
+           
+          <p
+            class="subtitle is-6"
+          >
+            @johnsmith
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="content"
+      >
+        
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Phasellus nec iaculis mauris.
+      
+        <a>
+          @bulmaio
+        </a>
+        .
+      
+        <a>
+          #css
+        </a>
+         
+        <a>
+          #responsive
+        </a>
+         
+        <br />
+         
+        <small>
+          11:09 PM - 1 Jan 2016
+        </small>
+      </div>
+    </div>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots Logo story as a component 1`] = `
+<div
+  style="padding: 2rem;"
+>
+  <div
+    class="VueToNuxtLogo"
+  >
+    <div
+      class="Triangle Triangle--two"
+    />
+     
+    <div
+      class="Triangle Triangle--one"
+    />
+     
+    <div
+      class="Triangle Triangle--three"
+    />
+     
+    <div
+      class="Triangle Triangle--four"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots SignUp Loading form 1`] = `
+<div
+  style="padding: 2rem;"
+>
+  <section>
+    <form
+      autocomplete="off"
+      class="loading"
+    >
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+        >
+          
+            Name
+        
+        </label>
+         
+        <div
+          class="control is-clearfix"
+        >
+          <input
+            autocomplete="on"
+            class="input"
+            type="text"
+          />
+           
+          <!---->
+           
+          <!---->
+           
+          <!---->
+        </div>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+        >
+          
+            Email
+        
+        </label>
+         
+        <div
+          class="control has-icons-right"
+        >
+          <input
+            autocomplete="on"
+            class="input is-danger"
+            maxlength="30"
+            type="email"
+          />
+           
+          <!---->
+           
+          <span
+            class="icon is-right has-text-danger"
+          >
+            <i
+              class="mdi mdi-alert-circle mdi-24px"
+            />
+          </span>
+           
+          <small
+            class="help counter is-invisible"
+          >
+            
+        0 / 30
+    
+          </small>
+        </div>
+         
+        <p
+          class="help is-danger"
+        >
+          This email is invalid
+        </p>
+      </div>
+       
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+        >
+          
+            Username
+        
+        </label>
+         
+        <div
+          class="control has-icons-right"
+        >
+          <input
+            autocomplete="on"
+            class="input is-success"
+            maxlength="30"
+            type="text"
+          />
+           
+          <!---->
+           
+          <span
+            class="icon is-right has-text-success"
+          >
+            <i
+              class="mdi mdi-check mdi-24px"
+            />
+          </span>
+           
+          <small
+            class="help counter is-invisible"
+          >
+            
+        0 / 30
+    
+          </small>
+        </div>
+         
+        <p
+          class="help is-success"
+        >
+          This username is available
+        </p>
+      </div>
+       
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+        >
+          
+            Password
+        
+        </label>
+         
+        <div
+          class="control has-icons-right is-clearfix"
+        >
+          <input
+            autocomplete="on"
+            class="input"
+            type="password"
+          />
+           
+          <!---->
+           
+          <span
+            class="icon is-right has-text-primary is-clickable"
+          >
+            <i
+              class="mdi mdi-eye mdi-24px"
+            />
+          </span>
+           
+          <!---->
+        </div>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="field"
+      >
+        <label
+          class="b-checkbox checkbox"
+          tabindex="0"
+        >
+          <input
+            true-value="true"
+            type="checkbox"
+            value="false"
+          />
+           
+          <span
+            class="check"
+          />
+           
+          <span
+            class="control-label"
+          >
+            Accept
+          </span>
+        </label>
+      </div>
+       
+      <button
+        class="button is-primary"
+        disabled="disabled"
+        type="submit"
+      >
+        Submit
+      </button>
+       
+      <div
+        class="loading-overlay is-active is-full-page"
+      >
+        <div
+          class="loading-background"
+        />
+         
+        <div
+          class="loading-icon"
+        />
+      </div>
+    </form>
+  </section>
+</div>
+`;
+
+exports[`Storyshots SignUp Normal form 1`] = `
+<div
+  style="padding: 2rem;"
+>
+  <section>
+    <form
+      autocomplete="off"
+      class=""
+    >
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+        >
+          
+            Name
+        
+        </label>
+         
+        <div
+          class="control is-clearfix"
+        >
+          <input
+            autocomplete="on"
+            class="input"
+            type="text"
+          />
+           
+          <!---->
+           
+          <!---->
+           
+          <!---->
+        </div>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+        >
+          
+            Email
+        
+        </label>
+         
+        <div
+          class="control has-icons-right"
+        >
+          <input
+            autocomplete="on"
+            class="input is-danger"
+            maxlength="30"
+            type="email"
+          />
+           
+          <!---->
+           
+          <span
+            class="icon is-right has-text-danger"
+          >
+            <i
+              class="mdi mdi-alert-circle mdi-24px"
+            />
+          </span>
+           
+          <small
+            class="help counter is-invisible"
+          >
+            
+        0 / 30
+    
+          </small>
+        </div>
+         
+        <p
+          class="help is-danger"
+        >
+          This email is invalid
+        </p>
+      </div>
+       
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+        >
+          
+            Username
+        
+        </label>
+         
+        <div
+          class="control has-icons-right"
+        >
+          <input
+            autocomplete="on"
+            class="input is-success"
+            maxlength="30"
+            type="text"
+          />
+           
+          <!---->
+           
+          <span
+            class="icon is-right has-text-success"
+          >
+            <i
+              class="mdi mdi-check mdi-24px"
+            />
+          </span>
+           
+          <small
+            class="help counter is-invisible"
+          >
+            
+        0 / 30
+    
+          </small>
+        </div>
+         
+        <p
+          class="help is-success"
+        >
+          This username is available
+        </p>
+      </div>
+       
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+        >
+          
+            Password
+        
+        </label>
+         
+        <div
+          class="control has-icons-right is-clearfix"
+        >
+          <input
+            autocomplete="on"
+            class="input"
+            type="password"
+          />
+           
+          <!---->
+           
+          <span
+            class="icon is-right has-text-primary is-clickable"
+          >
+            <i
+              class="mdi mdi-eye mdi-24px"
+            />
+          </span>
+           
+          <!---->
+        </div>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="field"
+      >
+        <label
+          class="b-checkbox checkbox"
+          tabindex="0"
+        >
+          <input
+            true-value="true"
+            type="checkbox"
+            value="false"
+          />
+           
+          <span
+            class="check"
+          />
+           
+          <span
+            class="control-label"
+          >
+            Accept
+          </span>
+        </label>
+      </div>
+       
+      <button
+        class="button is-primary"
+        type="submit"
+      >
+        Submit
+      </button>
+       
+      <!---->
+    </form>
+  </section>
+</div>
+`;

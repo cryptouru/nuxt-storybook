@@ -1,0 +1,7 @@
+{
+  "env": {
+    "test": {
+      "presets": ["vue", "@babel/preset-env", "@nuxt/babel-preset-app"]
+    }
+  }
+}
