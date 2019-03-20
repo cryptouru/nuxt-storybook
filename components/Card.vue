@@ -2,30 +2,26 @@
   <div class="card">
     <div class="card-image">
       <figure class="image">
-        <img src="https://via.placeholder.com/728x430.png" alt="Image">
+        <img :src="image" alt="Image">
       </figure>
     </div>
     <div class="card-content">
       <div class="media">
         <div class="media-left">
           <figure class="image is-48x48">
-            <img src="https://via.placeholder.com/90" alt="Image">
+            <img :src="thumb" alt="Image">
           </figure>
         </div>
         <div class="media-content">
-          <p class="title is-4">John Smith</p>
-          <p class="subtitle is-6">@johnsmith</p>
+          <p class="title is-4">{{author}}</p>
+          <p class="subtitle is-6">{{user}}</p>
         </div>
       </div>
 
       <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Phasellus nec iaculis mauris.
-        <a>@bulmaio</a>.
-        <a>#css</a>
-        <a>#responsive</a>
+        {{text}}
         <br>
-        <small>11:09 PM - 1 Jan 2016</small>
+        <small>{{date}}</small>
       </div>
     </div>
 
@@ -35,7 +31,16 @@
 
 <script>
 export default {
-  props: ["loading"]
+  props: {
+    loading: Boolean,
+    title: String,
+    text: String,
+    date: Date,
+    image: String,
+    author: String,
+    user: String,
+    thumb: String
+  }
 };
 </script>
 
