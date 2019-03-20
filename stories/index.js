@@ -9,6 +9,7 @@ import {
 
 import Logo from '../components/Logo.vue';
 import SignUp from '../components/SignUp.vue';
+import Card from '../components/Card.vue';
 
 export const methods = {
   log: action("log"),
@@ -16,7 +17,7 @@ export const methods = {
 
 const paddedList = () => {
   return {
-    template: '<div style="padding: 3rem;"><story/></div>'
+    template: '<div style="padding: 2rem;"><story/></div>'
   };
 };
 
@@ -44,5 +45,21 @@ storiesOf('SignUp', module)
       SignUp
     },
     template: '<SignUp @submit="log" loading="true"></SignUp>',
+    methods
+  }));;
+
+storiesOf('Card', module)
+  .addDecorator(paddedList)
+  .add('Vanilla', () => ({
+    components: {
+      Card
+    },
+    template: '<Card/>',
+    methods
+  })).add('Loading', () => ({
+    components: {
+      Card
+    },
+    template: '<Card loading="true"/>',
     methods
   }));

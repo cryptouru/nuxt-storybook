@@ -1,7 +1,6 @@
 <template>
   <section>
-
-    <form autocomplete="off" @submit.stop.prevent="$emit('submit', formData)">
+    <form autocomplete="off" @submit.stop.prevent="$emit('submit', formData)" :class="{ loading: loading }">
       <b-field label="Name">
         <b-input v-model="formData.name"></b-input>
       </b-field>
@@ -22,6 +21,7 @@
         <b-checkbox  v-model="formData.acceptTerms">Accept</b-checkbox>
       </div>
       <button :disabled="loading" type="submit" class="button is-primary">Submit</button>
+       <b-loading :active.sync="loading" :can-cancel="true"></b-loading>
     </form>
   </section>
 </template>

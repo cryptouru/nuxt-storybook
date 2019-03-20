@@ -1,10 +1,19 @@
 import {
-  configure
+  configure,
+  addParameters
 } from '@storybook/vue';
 
 import {
   action
 } from '@storybook/addon-actions';
+
+const viewportOptions = {
+  defaultViewport: "iphone6"
+}
+
+addParameters({
+  viewport: viewportOptions
+});
 
 import Vue from 'vue';
 // import Vuex from 'vuex'; // Vue plugins
