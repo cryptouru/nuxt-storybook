@@ -32,10 +32,17 @@ storiesOf('Logo', module)
 
 storiesOf('SignUp', module)
   .addDecorator(paddedList)
-  .add('story as a component', () => ({
+  .add('Normal form', () => ({
     components: {
       SignUp
     },
-    template: '<SignUp @vote="log"></SignUp>',
+    template: '<SignUp @submit="log"></SignUp>',
+    methods
+  }))
+  .add('Loading form', () => ({
+    components: {
+      SignUp
+    },
+    template: '<SignUp @submit="log" loading="true"></SignUp>',
     methods
   }));
