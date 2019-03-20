@@ -41,12 +41,15 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [{
+    src: '~assets/theme.scss',
+    lang: 'sass'
+  }, ],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['@/plugins/buefy'],
 
   /*
    ** Nuxt.js modules
