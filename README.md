@@ -1,4 +1,4 @@
-# thePost
+# Nuxtjs and Storybook client
 
 > Storybook and NuxtJS starter
 
